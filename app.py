@@ -159,7 +159,7 @@ if uploaded_file is not None:
 # Sidebar information
 st.sidebar.title("ℹ️ About")
 st.sidebar.info(
-    "This app uses a Convolutional Neural Network (CNN) to classify "
+    "This app uses a PST-CNN to classify "
     "plant diseases in cashew and tomato plants. Upload an image and "
     "get instant predictions!"
 )
@@ -178,4 +178,3 @@ for class_name in CLASS_NAMES:
 st.sidebar.divider()
 st.sidebar.write(f"**Device:** {device}")
 st.sidebar.write(f"**Total Classes:** {len(CLASS_NAMES)}")
-st.sidebar.write(f"**Image Size:** 48x48")
